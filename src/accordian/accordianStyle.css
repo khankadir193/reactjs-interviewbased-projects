@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f0f0f0;
+    flex-direction: column;
+}
+.btnStyle{
+    background-color: #614101;
+    padding: 10px;
+    border: none;
+    /* border-radius: 5px; */
+    width: 41vw;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    margin: 1vw;
+    outline: none;
+}
+
+.content{
+    background-color: #614101;
+    padding: 1vw;
+    margin: 4vw;
+    position: relative;
+    top: -4.9vw;
+    width: 39vw;
+    color: white;
+}
