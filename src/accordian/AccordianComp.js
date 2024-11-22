@@ -16,7 +16,7 @@ const AccordianComp = () => {
             {
                 data.map((item) => {
                     return (
-                        <div style={{textAlign:'center',width:'50vw'}}>
+                        <div>
                             <button key={item.id} onClick={()=>handleAccrodian(item.id)} className='btnStyle'>{item.question}</button>
                             {expand && expandId === item.id && <p key={item.id} className='content'>{item.answer}</p>}
                         </div>

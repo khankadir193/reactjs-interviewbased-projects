@@ -23,9 +23,10 @@
 .content{
     background-color: #614101;
     padding: 1vw;
-    margin: 4vw;
+    margin: 3vw;
     position: relative;
-    top: -4.9vw;
+    top: -3.9vw;
     width: 39vw;
     color: white;
+    right: 2vw;
 }
