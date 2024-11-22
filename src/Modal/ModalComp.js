@@ -1,5 +1,6 @@
 import React from 'react';
 import DailogBox from './DailogBox';
+import './dailog.css';
 
 const ModalComp = () => {
     const [isDailogOpen, setIsDailogOpen] = React.useState(false);
@@ -8,7 +9,7 @@ const ModalComp = () => {
     const closeDailog = () => setIsDailogOpen(false);
 
     return (
-        <div>
+        <div className='dailog-container'>
             <button onClick={openDailog}>open modal</button>
             <DailogBox
                 open={isDailogOpen}

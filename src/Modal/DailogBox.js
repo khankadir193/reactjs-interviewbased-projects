@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './dailog.css';
 
 const DailogBox = ({open,close,header,body,footer}) => {
     if(!open) return null;
