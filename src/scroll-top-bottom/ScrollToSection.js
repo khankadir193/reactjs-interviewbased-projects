@@ -1,8 +1,33 @@
-import React from 'react'
+import React, { useEffect,useState } from 'react'
 
-const scrollToSection = () => {
+const ScrollToSection = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+   window.addEventListener('scroll',handleScrolls); 
+
+   return () => {
+    window.removeEventListener('scroll',handleScrolls);
+   };
+  },[]);
+
+  const handleScrolls = () => {
+    if(window.scrollY > 200){
+      setIsVisible(true);
+    }else{
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  };
+
   const handleScroll = () => {
-    const section3 = document.getElementById('section4');
+    const section3 = document.getElementById('section3');
     if (section3) {
       section3.scrollIntoView({ behavior: 'smooth' });
     }
@@ -11,6 +36,11 @@ const scrollToSection = () => {
 
   return (
     <div>
+      {isVisible && (
+        <button className="scroll-to-top" onClick={scrollToTop}>
+          &#8679;
+        </button>
+      )}
       <div style={{ textAlign: 'center' }}>
         <h1>Scroll to Particular Section</h1>
         <button onClick={handleScroll}>Click to Scroll</button>
@@ -35,4 +65,4 @@ const scrollToSection = () => {
   )
 };
 
-export default scrollToSection;
+export default ScrollToSection;

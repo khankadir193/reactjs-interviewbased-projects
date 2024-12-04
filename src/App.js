@@ -7,9 +7,9 @@ import ModalComp from './Modal/ModalComp';
 function App() {
   return (
     <div>
-     {/* <ScrollToSection /> */}
+     <ScrollToSection />
      {/* <AccordianComp /> */}
-     <ModalComp />
+     {/* <ModalComp /> */}
     </div>
   );
 }
