@@ -4,6 +4,7 @@ import ScrollToSection from './scroll-top-bottom/ScrollToSection';
 import AccordianComp from './accordian/AccordianComp';
 import ModalComp from './Modal/ModalComp';
 import DebounceExample from './Debounce/DebounceComp';
+import ThrottleExample from './Throttle/ThrottleExample';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
      {/* <ScrollToSection /> */}
      {/* <AccordianComp /> */}
      {/* <ModalComp /> */}
-     <DebounceExample />
+     {/* <DebounceExample /> */}
+     <ThrottleExample />
     </div>
   );
 }
