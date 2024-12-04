@@ -7,7 +7,7 @@ const ThrottleExample = () => {
   useEffect(() => {
     const handleScroll = () => {
       const now = Date.now(); // Current timestamp
-      const throttleDelay = 200; // Throttle delay in milliseconds
+      const throttleDelay = 1000; // Throttle delay in milliseconds
 
       // Throttle logic: execute if the delay period has passed
       if (now - lastExecutedTimeRef.current >= throttleDelay) {
