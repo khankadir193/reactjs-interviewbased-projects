@@ -25,7 +25,7 @@ const DebounceExample = () => {
 
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', margin: '4vw' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', margin: '4vw',flexDirection:'column' }}>
             <input type="text" name="text" placeholder="enter the text" onChange={handleChange} style={{ width: '30%', height: '4vh', borderRadius: '3vw', padding: '1vw' }} />
             <p>
                 <strong>Search Term:</strong> {searchTerm}
